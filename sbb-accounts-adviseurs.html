@@ -1,0 +1,547 @@
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Mon May 24 2021 09:47:48 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="602a5a5f97565429f8a99c08" data-wf-site="5f33d4817b5f57060da409d1">
+<head>
+  <meta charset="utf-8">
+  <title>SBB - Accounts &amp; Adviseurs</title>
+  <meta content="Designing for 22.000+ customers" name="description">
+  <meta content="SBB - Accounts &amp; Adviseurs" property="og:title">
+  <meta content="Designing for 22.000+ customers" property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/5f33d4817b5f57060da409d1/60aa9f558b9b737d07853369_open_graph.jpg" property="og:image">
+  <meta content="SBB - Accounts &amp; Adviseurs" property="twitter:title">
+  <meta content="Designing for 22.000+ customers" property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/5f33d4817b5f57060da409d1/60aa9f558b9b737d07853369_open_graph.jpg" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/stefan-oury.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+  .w-container {max-width: 90vw;}
+}
+</style>
+</head>
+<body class="body bg-sbb">
+  <div class="w-embed">
+    <style>
+/* CHANGE HR COLOR */ 
+.hr {
+opacity: 0.32;
+border: 1px solid #F2F1EC;
+}
+/* CHANGE HR IN NAVIGATION COLOR */ 
+.nav__hr {
+	background-color: #F2F1EC;
+  opacity: 0.32;
+}
+/* CHANGE NAV COLOR */
+.nav .small {
+	color: #fffcec;
+  opacity: 0.8;
+}
+/* CHANGE NAV FOOTER COLOR */
+.nav__link .small {
+	color: #fffcec;
+  opacity: 0.8;
+}
+/* CHANGE NAV OVERLAY COLOR */ 
+.nav__overlay {
+	background-color: #151d2f;
+}
+/* CHANGE CURSOR COLOR */
+.cursor_dot {
+	background-color: #0096d8;
+}
+</style>
+  </div>
+  <div class="w-embed">
+    <style>
+.w-webflow-badge {
+	display: none !important;
+}
+/* Font Smoothing */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/* Cursor */
+body:hover .cursor {opacity:1.0;}
+.cursor {pointer-events: none;}
+/* Selectie kleur */
+::selection {
+  background: #41B5AF; 
+}
+::-moz-selection {
+  background: #41B5AF; 
+}
+/* Lijn onder link */
+.intro__heading--highlight {
+		text-decoration: none;
+    color: #FFFCEC;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 94%;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.3s;
+}
+/* Lijn onder link - hover */
+.intro__heading--highlight:hover {
+		background-size: 0% 1px;
+}
+/* Lijn onder mail */
+.mail--highlight {
+		text-decoration: none;
+    color: #FFFCEC;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 101%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.5s;
+}
+/* Lijn onder mail - hover */
+.mail--highlight:hover {
+		background-size: 0% 2px;
+}
+/* Active menu */
+.w--current {
+	opacity: 1 !important;
+}
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateZ(0);
+  will-change: transform;
+    z-index: 999;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.grain:before {
+  content: "";
+  top: -10rem;
+  left: -10rem;
+  width: calc(300% + 20rem);
+  height: calc(300% + 20rem);
+  z-index: 9999;
+  position: fixed;
+  opacity: 0.35;
+  background-image: url(https://www.kikk.be/2020/files/templates/kikk2020/public/assets/images/noise-a01861329c.png);
+  pointer-events: none;
+  -webkit-animation: noise 2s steps(2) infinite;
+  animation: noise 2s steps(2) infinite;
+}
+@-webkit-keyframes noise {
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+@keyframes noise {
+  0% {
+    transform: translate3d(0, 9rem, 0);
+  }
+  10% {
+    transform: translate3d(-1rem, -4rem, 0);
+  }
+  20% {
+    transform: translate3d(-8rem, 2rem, 0);
+  }
+  30% {
+    transform: translate3d(9rem, -9rem, 0);
+  }
+  40% {
+    transform: translate3d(-2rem, 7rem, 0);
+  }
+  50% {
+    transform: translate3d(-9rem, -4rem, 0);
+  }
+  60% {
+    transform: translate3d(2rem, 6rem, 0);
+  }
+  70% {
+    transform: translate3d(7rem, -8rem, 0);
+  }
+  80% {
+    transform: translate3d(-9rem, 1rem, 0);
+  }
+  90% {
+    transform: translate3d(6rem, -5rem, 0);
+  }
+  to {
+    transform: translate3d(-7rem, 0, 0);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav__link {
+   opacity: 1 !important;
+  }
+}
+</style>
+  </div>
+  <div class="page-transition"></div>
+  <div class="grain"></div>
+  <div class="cursor">
+    <div class="cursor_dot"></div>
+  </div>
+  <div id="luxy" class="wrapper">
+    <nav class="nav">
+      <div data-w-id="75c3e3ca-b73b-74ef-f4bb-b5a722845529" class="nav__container">
+        <div class="nav__c">
+          <div class="nav__link is-smaller"><strong><em>Folio — 21</em></strong></div>
+        </div>
+        <div id="w-node-_75c3e3ca-b73b-74ef-f4bb-b5a722845530-22845528" class="nav__c">
+          <a data-w-id="c83ced4c-7d77-453c-37ae-c77368c6eb9f" href="index.html" class="nav__link w-inline-block">
+            <div class="nav__text">Stefan Oury</div>
+          </a>
+        </div>
+        <div id="w-node-_75c3e3ca-b73b-74ef-f4bb-b5a722845534-22845528" class="nav__c">
+          <a href="about.html" class="nav__link is-smaller no-margin w-inline-block">
+            <div class="nav__text">About</div>
+          </a>
+        </div>
+      </div>
+      <div data-w-id="75c3e3ca-b73b-74ef-f4bb-b5a72284553e" class="nav__mobile">
+        <div class="nav__c">
+          <a href="index.html" class="nav__link w-inline-block">
+            <div class="nav__text is-mobile">Stefan Oury</div>
+          </a>
+        </div>
+        <div class="nav__hamburger">
+          <div data-w-id="75c3e3ca-b73b-74ef-f4bb-b5a722845544" class="nav__line"></div>
+          <div data-w-id="75c3e3ca-b73b-74ef-f4bb-b5a722845545" class="nav__line no-margin"></div>
+        </div>
+      </div>
+      <div data-w-id="75c3e3ca-b73b-74ef-f4bb-b5a722845546" class="nav__hr"></div>
+      <div class="nav__overlay">
+        <div class="nav__top">
+          <a href="index.html" class="nav_moblie__link w-inline-block">
+            <h1 class="nav__mobile_item">Home</h1>
+          </a>
+          <a href="about.html" class="nav_moblie__link w-inline-block">
+            <h1 class="nav__mobile_item">About</h1>
+          </a>
+        </div>
+        <div class="nav__bottom">
+          <a href="https://www.linkedin.com/in/stefanoury/" target="_blank" class="nav_moblie__link w-inline-block">
+            <h1 class="nav__mobile_item is-smaller">Linkedin</h1>
+          </a>
+          <a href="https://dribbble.com/stefan_oury" target="_blank" class="nav_moblie__link w-inline-block">
+            <h1 class="nav__mobile_item is-smaller">Dribbble</h1>
+          </a>
+          <a href="https://www.instagram.com/ourystefan/" target="_blank" class="nav_moblie__link w-inline-block">
+            <h1 class="nav__mobile_item is-smaller no-margin">Instagram</h1>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="intro_projects w-container">
+        <div id="w-node-_5fd248e8-c92f-74fe-e205-72532cb72f10-f8a99c08" class="intro_projects__title">
+          <h1 class="heading__header is-detail">Designing for more than <span class="italic">22.000</span> customers</h1>
+        </div>
+        <div id="w-node-_5fd248e8-c92f-74fe-e205-72532cb72f13-f8a99c08" class="intro_projects__img"><img src="images/sbb_header.jpg" loading="eager" style="-webkit-transform:translate3d(0, 500px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 500px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 500px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 500px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" sizes="(max-width: 479px) 12vw, (max-width: 991px) 13vw, (max-width: 1439px) 14vw, 940px" srcset="images/sbb_header-p-1080.jpeg 1080w, images/sbb_header.jpg 1160w" alt="" class="img__projects"></div>
+      </div>
+    </header>
+    <div class="w-container">
+      <main class="projects_grid">
+        <div id="summary" class="project_summary w-node-a6abd53d-4fb1-579f-6988-f103bdf47d8a-bdf47d8a">
+          <div id="w-node-a6abd53d-4fb1-579f-6988-f103bdf47d8b-bdf47d8a" class="project_summary_content">
+            <div class="stagger-trigger">
+              <div class="project_summary_item">
+                <h4 class="project_summary_heading">Role</h4>
+                <p class="project_summary_paragraph">Digital Strategy &amp; design</p>
+              </div>
+            </div>
+            <div class="stagger-trigger">
+              <div class="project_summary_item fade-in-up">
+                <h4 class="project_summary_heading">Agency</h4>
+                <p class="project_summary_paragraph">RCA</p>
+              </div>
+            </div>
+            <div class="stagger-trigger">
+              <div class="project_summary_item fade-in-up">
+                <h4 class="project_summary_heading">Client</h4>
+                <p class="project_summary_paragraph">SBB - Accounts en Adviseurs</p>
+              </div>
+            </div>
+            <div class="stagger-trigger">
+              <div class="project_summary_item has_padding fade-in-up">
+                <h4 class="project_summary_heading">Visit</h4>
+                <a href="http://www.sbb.be" target="_blank" class="project_summary_link w-inline-block">
+                  <p class="project_summary_paragraph">www.sbb.be</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-_89849368-e76c-d1de-140f-6c1d70f01229-70f01229" class="project_hr">
+          <div id="w-node-_89849368-e76c-d1de-140f-6c1d70f0122a-70f01229" class="project_hr_content">
+            <div class="hr"></div>
+          </div>
+        </div>
+        <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4ae-321dd4ae" class="project_info">
+          <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4af-321dd4ae" class="projects_info_content">
+            <div class="projects_info__title">
+              <h2 class="projects_info_heading">About SBB</h2>
+            </div>
+            <div class="projects_info__text">
+              <p class="projects_info_paragraph">SBB is a Belgian accountancy and consultancy company with more then 30 offices and 22.000 customers. SBB acts as a business coach and knowledge partner and offers entrepreneurs, starters, SME company managers, liberal professionals and social profit professionals a wide range of accountancy services and advice on how to be smarter in their business.<br><br></p>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_home-cropped.png" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Homepage with target audiences</p>
+          </div>
+        </div>
+        <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4ae-321dd4ae" class="project_info">
+          <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4af-321dd4ae" class="projects_info_content">
+            <div class="projects_info__title">
+              <h2 class="projects_info_heading">The Brief</h2>
+            </div>
+            <div class="projects_info__text">
+              <p class="projects_info_paragraph">How can we share their expertise, which is deeply embedded in the DNA of SBB, on one centralised, future-proof platform with multiple target audiences? We worked closely with SBB to align the brand values to the needs and challenges of their customers. We firstly defined what problems to solve. How can we target each group individually? How do we communicate the DNA of SBB? And how do we find a balance between endless digital inspiration and real world coaching?</p>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_sbb_the_brief.png" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text"> </p>
+          </div>
+        </div>
+        <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4ae-321dd4ae" class="project_info">
+          <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4af-321dd4ae" class="projects_info_content">
+            <div class="projects_info__title">
+              <h2 class="projects_info_heading">Framing the problem</h2>
+            </div>
+            <div class="projects_info__text">
+              <p class="projects_info_paragraph">Taking into account (no pun intended) the motivations and obstacles of each target group, we started with a market analysis to explore the landscape. Conclusion: starting or running a business and finding information online is not always obvious. This once again confirms that the role of SBB as an on and offline coach is essential. With these insights we started analysing content and translated this into a detailed information architecture (sitemap, wireframes).</p>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-b8479aea-4934-a840-9f9d-0146546914e7-f8a99c08" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img loading="eager" width="0" src="images/sbb_wireframe-v2.png" alt="" class="projects__img"></div>
+        </div>
+        <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4ae-321dd4ae" class="project_info">
+          <div id="w-node-debc98fd-a08e-31b8-1708-7547321dd4af-321dd4ae" class="projects_info_content">
+            <div class="projects_info__title">
+              <h2 class="projects_info_heading">The Solution</h2>
+            </div>
+            <div class="projects_info__text">
+              <p class="projects_info_paragraph">We have therefore taken the coaching of entrepreneurs very literally. For example, we developed a digital platform where you can easily find information. From starters to experienced entrepreneurs, SBB got you covered. With content specific landing pages for each target group, downloadable guides, articles, videos, real life stories, events and smart call-to-actions, SBB ensures that each visitor feels inspired and informed.</p>
+            </div>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_sbb-magazine.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Magazine overview</p>
+          </div>
+        </div>
+        <div id="w-node-b4a72a8e-49eb-b70e-3720-6a51681276cc-681276cc" class="project_img-half_width">
+          <div id="img-half" data-w-id="b4a72a8e-49eb-b70e-3720-6a51681276cd" class="project_img-half_width-item"><img src="images/image_sbb-starter.jpg" loading="lazy" alt="" class="projects__img">
+            <p class="projects__small_text">Starters overview</p>
+          </div>
+          <div class="project_img-half_width-item"><img src="images/image_home.jpg" loading="lazy" alt="" class="projects__img">
+            <p class="projects__small_text">Homepage with animating header</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_expertises.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Expertise overview</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_expertise_detail.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Expertise detail</p>
+          </div>
+        </div>
+        <div id="w-node-b4a72a8e-49eb-b70e-3720-6a51681276cc-681276cc" class="project_img-half_width">
+          <div id="img-half" data-w-id="b4a72a8e-49eb-b70e-3720-6a51681276cd" class="project_img-half_width-item"><img src="images/image_magazine_detail.jpg" loading="lazy" alt="" class="projects__img">
+            <p class="projects__small_text">Blog detail</p>
+          </div>
+          <div class="project_img-half_width-item"><img src="images/image_startersgids.jpg" loading="lazy" alt="" class="projects__img">
+            <p class="projects__small_text">Landingpage</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/image_contact.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Contact</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/sbb_rekentool.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Calculator tool</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/sbb_mailings.png" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text"><br>Mailings</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/sbb_werkenbij.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">Job website</p>
+          </div>
+        </div>
+        <div id="w-node-b24a37a0-2f72-3d58-7b5b-be89b69ba682-b69ba682" class="project_img-full-width">
+          <div class="project_img-full-width-container"><img src="images/mysbb_platform.jpg" loading="eager" width="0" alt="" class="projects__img">
+            <p class="projects__small_text">MySBB Platform</p>
+          </div>
+        </div>
+        <div id="w-node-_7625645d-c7e5-d3c0-3177-d9f1831b5d1f-f8a99c08" class="project_img-3rd">
+          <div class="stagger-trigger-3rd">
+            <div class="projects_img-3rd-width"><img src="images/starter-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+            <div class="projects_img-3rd-width is-second"><img src="images/expertises_detail-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+          </div>
+          <div class="stagger-trigger-3rd">
+            <div class="projects_img-3rd-width has--top"><img src="images/startersgids-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+            <div class="projects_img-3rd-width is-second"><img src="images/kantoren-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+          </div>
+          <div class="stagger-trigger-3rd">
+            <div class="projects_img-3rd-width"><img src="images/magazine-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+            <div class="projects_img-3rd-width is-second"><img src="images/expertises-mobile.jpg" loading="lazy" alt="" class="projects__img"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="hr"></div>
+      <div class="footer_content">
+        <div class="small">Don&#x27;t be shy, say hi</div>
+        <a href="mailto:info@stefanoury.be" class="email__link_block w-inline-block">
+          <h2 data-w-id="134c62ec-6038-9031-252b-3067709c5244" class="mail--highlight">info@stefanoury.be</h2>
+        </a>
+        <div class="arrow"><img src="images/icon_arrowdown.svg" loading="eager" alt="" class="icon__arrow is-footer"></div>
+        <h4 class="heading-8">Let&#x27;s get schwifty</h4>
+      </div>
+      <div class="nav__hr"></div>
+      <div class="footer__nav">
+        <div class="footer__left">
+          <a href="https://dribbble.com/stefan_oury/" target="_blank" class="nav__link is-smaller w-inline-block">
+            <div class="nav__text"><em>Dribbble</em></div>
+          </a>
+          <a href="https://www.linkedin.com/in/stefanoury/" target="_blank" class="nav__link is-smaller w-inline-block">
+            <div class="nav__text"><em>Linkedin</em></div>
+          </a>
+          <a href="https://www.instagram.com/ourystefan" target="_blank" class="nav__link is-smaller w-inline-block">
+            <div class="nav__text"><em>Instagram</em></div>
+          </a>
+          <a href="https://letterboxd.com/stefan_oury/" target="_blank" class="nav__link is-smaller w-inline-block">
+            <div class="nav__text"><em>Letterboxd</em></div>
+          </a>
+        </div>
+        <div class="footer__right">
+          <a href="http://www.webflow.com" target="_blank" class="nav__link is-smaller no-margin is-footer w-inline-block">
+            <div class="nav__text">Made with love in Webflow</div>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f33d4817b5f57060da409d1" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+  $('a').mouseenter(function() {
+  $('.cursor').click();
+});
+$('a').mouseleave(function() {
+  $('.cursor').click();
+});
+</script>
+  <script>
+// © Code by T.RICKS, https://www.tricksdesign.com/
+// You have the license to use this code in your projects but not redistribute it to others
+// Works on internal links, ignores external links or links containing #
+function internalLink(myLink) {
+    return (myLink.host == window.location.host);
+}
+$('a').each(function() {
+  if (internalLink(this) && (this).href.indexOf('#') === -1) {
+  $(this).click(function(e){
+  e.preventDefault();
+  var moduleURL = jQuery(this).attr("href");
+  setTimeout( function() { window.location = moduleURL }, 1000 );
+  // Class that has page out interaction tied to click
+  $('.page-transition').click();
+});
+    }
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <script>
+// © Code by T.RICKS, https://www.tricksdesign.com/
+// You have the license to use this code in your projects but not redistribute it to others
+// TRIGGERS
+// Wait before playing animation
+setTimeout(() => {  
+// Put the play below this line
+}, 800);
+// Play animation when something is clicked
+$( ".your-button-class" ).click(function() {
+	// Put the play below this line
+});
+// Play animation when hovered in
+$( ".your-button-class" ).mouseenter(function() {
+		// Put the play below this line
+});
+// Play animation when hovered out
+$( ".your-button-class" ).mouseleave(function() {
+		// Put the play below this line
+});
+// Play animation when scrolled into view
+$('#summary').one('inview', function(event, isInView) {
+  if (isInView) {
+      // Stagger your animation
+   $(".stagger-trigger").each(function (i) {
+      var $item = $(this); 
+      setTimeout(function() { 
+        $item.click();
+      }, 150*i);
+      // delays the next animation by 200 milliseconds
+    });
+  } else {
+  }
+});
+// Play animation when scrolled into view
+$('.project_img-3rd').one('inview', function(event, isInView) {
+  if (isInView) {
+      // Stagger your animation
+   $(".stagger-trigger-3rd").each(function (i) {
+      var $item = $(this); 
+      setTimeout(function() { 
+        $item.click();
+      }, 150*i);
+      // delays the next animation by 200 milliseconds
+    });
+  } else {
+  }
+});
+// Play animation when scrolled into view
+$('.project_img-half_width').one('inview', function(event, isInView) {
+  if (isInView) {
+      // Stagger your animation
+   $(".project_img-half_width-item").each(function (i) {
+      var $item = $(this); 
+      // Wait before playing animation
+      setTimeout(function() { 
+        $item.click();
+      }, 150*i);
+      // delays the next animation by 200 milliseconds
+    });
+  } else {
+  }
+});
+</script>
+</body>
+</html>
